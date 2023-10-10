@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - iPad Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a; /* Dark background for dark mode */
+            color: #ffffff; /* Text color for dark mode */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #container {
+            background-color: #2d2d2d; /* Container background color */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
+            transition: background-color 0.3s ease;
+        }
+
+        .mac-window {
+            background-color: #f6f6f6; /* MacOS window background color */
+            border: 1px solid #d1d1d1; /* Window border color */
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px; /* Add margin to separate from the header */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #61dafb; /* Header text color */
+            margin-top: 0; /* Adjusted margin to bring the text up */
+        }
+
+        p {
+            margin-top: 10px; /* Add some margin to the paragraphs for spacing */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        a {
+            color: #61dafb; /* Link color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        a:hover {
+            color: #4fa3d1; /* Link color on hover */
+            background-color: rgba(79, 163, 209, 0.2); /* Faded background color on hover */
+        }
+
+        a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #d1d1d1; /* Divider color */
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="mac-window">
+        <h1>Games</h1>
+        <p>Discover a variety of exciting games for your iPad.</p>
+        <ul>
+            <li><a href="https://pixlr.com/suite" target="_blank">Photo Editing - PIXLR</a></li>
+            <li><a href="https://among-us-online-unblocked.ryansanborn.repl.co/" target="_blank">Among Us (MULTIPLAYER)</a></li>
+            <!-- Add more game links as needed -->
+        </ul>
+    </div>
+</body>
+</html>
