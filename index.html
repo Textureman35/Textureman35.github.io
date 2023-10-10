@@ -173,6 +173,16 @@
       document.getElementById(popupId).style.display = 'none';
     }
   </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var container = document.getElementById('container');
+        var parallaxInstance = new Parallax(container, {
+            relativeInput: true
+        });
+    });
+</script>
+
 </body>
 
 </html>
