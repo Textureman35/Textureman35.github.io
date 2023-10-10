@@ -178,7 +178,7 @@
 
     <script>
         // Wait for the content to load, then trigger animations
-        window.onload = function () {
+        document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('container').style.opacity = '1';
             document.getElementById('container').style.transform = 'translateY(0)';
             document.querySelector('.mac-window').style.opacity = '1';
@@ -189,7 +189,7 @@
             document.querySelector('p').style.transform = 'translateY(0)';
             document.querySelector('a').style.opacity = '1';
             document.querySelector('a').style.transform = 'translateY(0)';
-        };
+        });
 
         function openPopup(popupId) {
             document.getElementById(popupId).style.display = 'flex';
