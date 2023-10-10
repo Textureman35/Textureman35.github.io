@@ -33,46 +33,50 @@
         }
 
         #container {
+            opacity: 0;
+            transform: translateY(20px);
             background-color: #2d2d2d; /* Container background color */
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             width: 80%;
             max-width: 600px;
-            transition: background-color 0.3s ease;
-            animation: fadeIn 1s ease;
+            transition: background-color 0.3s ease, opacity 1s ease, transform 1s ease;
         }
 
         .mac-window {
+            opacity: 0;
+            transform: translateX(-20px);
             background-color: #f6f6f6; /* MacOS window background color */
             border: 1px solid #d1d1d1; /* Window border color */
             border-radius: 8px;
             padding: 20px;
             margin-top: 20px; /* Add margin to separate from the header */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            animation: slideIn 1s ease;
+            transition: opacity 1s ease, transform 1s ease;
         }
 
         h1 {
+            opacity: 0;
+            transform: translateY(20px);
             color: #61dafb; /* Header text color */
             margin-top: 0; /* Adjusted margin to bring the text up */
-            animation: fadeInUp 1s ease;
+            transition: opacity 1s ease, transform 1s ease;
         }
 
         p {
+            opacity: 0;
+            transform: translateY(20px);
             margin-top: 10px; /* Add some margin to the paragraphs for spacing */
-            animation: fadeIn 1s ease;
+            transition: opacity 1s ease, transform 1s ease;
         }
 
         a {
+            opacity: 0;
+            transform: translateY(20px);
             color: #61dafb; /* Link color */
             text-decoration: none;
-            transition: color 0.3s ease;
-            display: block;
-            padding: 10px;
-            border-radius: 5px;
-            position: relative;
-            animation: fadeIn 1s ease;
+            transition: opacity 1s ease, transform 1s ease;
         }
 
         a:hover {
@@ -173,6 +177,20 @@
     </div>
 
     <script>
+        // Wait for the content to load, then trigger animations
+        window.onload = function () {
+            document.getElementById('container').style.opacity = '1';
+            document.getElementById('container').style.transform = 'translateY(0)';
+            document.querySelector('.mac-window').style.opacity = '1';
+            document.querySelector('.mac-window').style.transform = 'translateX(0)';
+            document.querySelector('h1').style.opacity = '1';
+            document.querySelector('h1').style.transform = 'translateY(0)';
+            document.querySelector('p').style.opacity = '1';
+            document.querySelector('p').style.transform = 'translateY(0)';
+            document.querySelector('a').style.opacity = '1';
+            document.querySelector('a').style.transform = 'translateY(0)';
+        };
+
         function openPopup(popupId) {
             document.getElementById(popupId).style.display = 'flex';
         }
