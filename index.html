@@ -156,20 +156,26 @@
     <div id="container" class="mac-window">
         <h1>iPad Hub</h1>
         <p>Explore a variety of exciting content for your iPad.</p>
-        <a href="#" onclick="openPopup('gamesPopup')">Games</a>
+
+        <!-- New Tools Section -->
+        <div id="toolsSection">
+            <h2>Tools</h2>
+            <ul>
+                <li><a href="https://dezgo.com" target="_blank">AI IMAGE GENERATION</a></li>
+                <!-- Add more tools as needed -->
+            </ul>
+        </div>
+
+        <!-- Games Section -->
+        <div id="gamesSection">
+            <h2>Games</h2>
+            <a href="#" onclick="openPopup('gamesPopup')">Games</a>
+        </div>
     </div>
 
     <!-- Games Popup -->
     <div id="gamesPopup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup('gamesPopup')">&times;</span>
-            <h1>Games</h1>
-            <ul>
-                <li><a href="https://pixlr.com/suite" target="_blank">Photo Editing - PIXLR</a></li>
-                <li><a href="https://among-us-online-unblocked.ryansanborn.repl.co/" target="_blank">Among Us (MULTIPLAYER)</a></li>
-                <!-- Add more game links as needed -->
-            </ul>
-        </div>
+        <!-- ... (your existing games popup content) ... -->
     </div>
 
     <script>
