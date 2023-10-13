@@ -47,4 +47,123 @@ body {
 .card-footer {
   font-size: 0.65em;
   color: #446;
+
+   #container {
+            background-color: #2d2d2d; /* Container background color */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
+            transition: background-color 0.3s ease;
+            animation: fadeIn 1s ease;
+        }
+
+        .mac-window {
+            background-color: #f6f6f6; /* MacOS window background color */
+            border: 1px solid #d1d1d1; /* Window border color */
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px; /* Add margin to separate from the header */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1s ease;
+        }
+
+        h1 {
+            color: #61dafb; /* Header text color */
+            margin-top: 0; /* Adjusted margin to bring the text up */
+            animation: fadeInUp 1s ease;
+        }
+
+        p {
+            margin-top: 10px; /* Add some margin to the paragraphs for spacing */
+            animation: fadeIn 1s ease;
+        }
+
+        a {
+            color: #61dafb; /* Link color */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+            animation: fadeIn 1s ease;
+        }
+
+        a:hover {
+            color: #4fa3d1; /* Link color on hover */
+            background-color: rgba(79, 163, 209, 0.2); /* Faded background color on hover */
+        }
+
+        a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #d1d1d1; /* Divider color */
+        }
+
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.5s ease;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 }
