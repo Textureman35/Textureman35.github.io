@@ -1,6 +1,6 @@
 # iHub - Unblocked Games for iPad
 
-![iHub Logo](your-logo-url.png)
+![iHub Logo](https://raw.githubusercontent.com/Textureman35/Textureman35.github.io/main/favicon.ico)
 
 Welcome to iHub, the ultimate destination for unblocked games on your iPad. With iHub, you can enjoy a wide range of games without any restrictions. Whether you're a casual gamer or a serious enthusiast, we've got something for everyone.
 
