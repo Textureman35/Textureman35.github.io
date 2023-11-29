@@ -1,0 +1,201 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://ubg365.github.io/fruit-ninja/
+Subject: Fruit Ninja Unblocked - UBG365
+Date: Wed, 29 Nov 2023 13:43:21 +0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--RPWGmS2dCUpBPuHdxg6BC1tlYDddIA5LOg6wIi4AuN----"
+
+
+------MultipartBoundary--RPWGmS2dCUpBPuHdxg6BC1tlYDddIA5LOg6wIi4AuN----
+Content-Type: text/html
+Content-ID: <frame-091F20777D3EE6031F61339F215C16E2@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://ubg365.github.io/fruit-ninja/
+
+<!DOCTYPE html><html lang=3D"en" style=3D"height: 100%;"><head><meta http-e=
+quiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=3D"s=
+tylesheet" type=3D"text/css" href=3D"cid:css-cee843fa-203c-4133-95b0-edbccd=
+d1f1f8@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"ci=
+d:css-6df9b1cf-b5df-4b1e-832e-b337b298f33e@mhtml.blink" /><link rel=3D"styl=
+esheet" type=3D"text/css" href=3D"cid:css-049e2441-ab88-41dc-9ce9-c82055b8c=
+afa@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:c=
+ss-1df00c99-699b-4b49-9285-d9dae9496fda@mhtml.blink" />
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0, minimum-scale=3D1.0, maximum-scale=3D1.0, user-scalable=3Dno, viewp=
+ort-fit=3Dcover">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"ie=3Dedge">
+
+    <meta name=3D"theme-color" content=3D"#000000">
+
+    <link rel=3D"manifest" href=3D"https://ubg365.github.io/fruit-ninja/man=
+ifest.json">
+    <meta name=3D"mobile-web-app-capable" content=3D"yes">
+    <meta name=3D"apple-mobile-web-app-capable" content=3D"yes">
+    <meta name=3D"application-name" content=3D"Fruit Ninja">
+    <meta name=3D"apple-mobile-web-app-title" content=3D"Fruit Ninja">
+    <meta name=3D"msapplication-starturl" content=3D"./">
+   =20
+   =20
+
+    <title>Fruit Ninja Unblocked - UBG365</title>
+   =20
+    <!-- <link rel=3D"stylesheet" type=3D"text/css" href=3D"css/styles.css"=
+> -->
+
+   =20
+
+   =20
+    <!-- installs the serviceWorker -->
+    <!-- <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () =3D> {
+          navigator.serviceWorker.register('./sw.js')
+        })
+      }
+    </script> -->
+  <meta http-equiv=3D"origin-trial" content=3D"AymqwRC7u88Y4JPvfIF2F37QKylC=
+04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4=
+iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdm=
+FjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRyd=
+WV9"></head>
+  <body style=3D"height: 100%;">
+    <div class=3D"fontLoader" style=3D"font-family: gangofchinese;">-</div>
+    <div id=3D"content">
+        <div id=3D"phaser-canvas" style=3D"overflow: hidden; width: 100%; h=
+eight: 100%;"><canvas id=3D"enable3d-three-canvas" width=3D"1280" height=3D=
+"768" style=3D"display: block; width: 1305px; height: 783px; margin-left: 6=
+7px; margin-top: 0px;"></canvas><canvas id=3D"enable3d-phaser-canvas" width=
+=3D"1280" height=3D"768" style=3D"width: 1305px; height: 783px; margin-left=
+: 67px; margin-top: 0px; position: relative;"></canvas></div>
+    </div>       =20
+    <!-- <div id=3D"phaser-game"></div> -->
+ =20
+
+
+<div class=3D"iframeClose active" id=3D"iframeClose"></div></body></html>
+------MultipartBoundary--RPWGmS2dCUpBPuHdxg6BC1tlYDddIA5LOg6wIi4AuN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-cee843fa-203c-4133-95b0-edbccdd1f1f8@mhtml.blink
+
+@charset "utf-8";
+
+@font-face { font-family: gangofchinese; src: url("assets/font/gangofchines=
+e.ttf"); }
+
+body { background-color: rgb(0, 0, 0); margin: 0px; height: 100%; overflow:=
+ hidden; position: relative; max-height: 100vh !important; }
+
+.fontLoader { position: absolute; left: -1000px; visibility: hidden; }
+
+#phaser-canvas { margin: 0px auto; }
+
+body, #content { height: 100vh !important; max-height: 100vh !important; }
+
+#divAds, #tempads { display: none; }
+
+canvas { width: 100%; height: 100%; grid-area: 1 / 1; display: grid !import=
+ant; margin-top: 0px !important; margin-bottom: 0px !important; padding: 0p=
+x !important; max-width: 100% !important; max-height: 100vh !important; }
+------MultipartBoundary--RPWGmS2dCUpBPuHdxg6BC1tlYDddIA5LOg6wIi4AuN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-6df9b1cf-b5df-4b1e-832e-b337b298f33e@mhtml.blink
+
+@charset "utf-8";
+
+.iframeClose { position: fixed; left: 5px; top: 5px; background: url("/img/=
+back-home.png") 50% center / cover no-repeat; width: 51px; height: 51px; di=
+splay: none; z-index: 10; cursor: pointer; }
+
+.iframeClose.active { display: block; }
+------MultipartBoundary--RPWGmS2dCUpBPuHdxg6BC1tlYDddIA5LOg6wIi4AuN----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://ubg365.github.io/img/back-home.png
+
+iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAAK/INwWK6QAAABl0RVh0
+U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAA0ZSURBVHja7Fp7UJTXFT+7LPvisTyWACZi
+SCCkooxv6xSjozFabZCaGo2JmqSpJsbGpNpp/nA6UxudjtEZYybRRkVC1fho6vtRC0YTq6JGBeMD
+jFVBRRCWh8Iu7H5sz+8ud7Owu+yC/tHJ9HPu7Prt9917z+t3fudcVE6nk34Ml5p+JJdGfsnMzPT6
+sbW1lUJDQ0mlUomhKAqp1WpxLyIigpqamqilpUU812xrJq1O2yMsLCw9KSmpd48ePRLNZnOkwWDQ
+8XsOi8XSePfu3Zqr318tbWxqPG+32683NDTYEhISyOFwUEhICME7rFarWMNms7nX5mf9CnD06NH2
+gnT18lg0JTU1Natfv37Ppaen94UA4eHhKo1G434OFzaE79ggC1R/9erV70+fPn342rVruyorK48b
+jUY7hOnupZILBWsRfOJ+nDluaP8B/d8ePXr0L1JSUqKxiebmZjGgYbn5jsJD21qtlnQ6nbACC6Uc
+O3bsxJHDR9aWlZdt4Xet+L2rFumSILAAa/rxkSNHLpw8efIr7EI6uJd0B2yOXUlsFBbBRqUlMBcG
+XBGbxIDQeC4qKkrMUVBQcHzbtm1/rqmp2Y/1Mc9DFwQLJyYmTp89e/Zfhg0b1uP+/fvU2NhI7BIU
+GRkpPqU7eVqgnfk9LIS5MSfHCWEuKCI2Npaqqqpa161btzo/P38hK6UWcz4UQTARL6gdOnTo4vfe
+e29BTEwM3IH0ej3FRMcIAVRql9a7BOUsk1rlAk1Yqb6+nurq68hoMAogYcucyM3NfZXnLOlsmqCC
+vS2gwyZMmLB27ty5U6EZS42FzLFmMkWZhBYhrLO1TYCupCR+VuF/7LQUqgmluLg4Cg8Lp+qaaqqu
+rqaXXnrppwmJCf9cvnz55Mb7jafgZkHBr6+LhdBlZ2evf/fddyffu3dPbDo+Pl5YgfXvCn5q7y7+
+XMm/PG2W5Fdh5cSERLLUWqiiooKeeeaZXtpQ7c5FixZN4L2chXf4s7racxNyYIPw3REjRiybN2+e
+EAIbTohPEMGM31sVlyU832t1PthwKA5yqpwiVmDxqsoq4nhMZEVu5jUfAzhgbaCiHF6CSB+XWJ+c
+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
+
+------MultipartBoundary--RPWGmS2dCUpBPuHdxg6BC1tlYDddIA5LOg6wIi4AuN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-049e2441-ab88-41dc-9ce9-c82055b8cafa@mhtml.blink
+
+@charset "utf-8";
+
+#enable3d-phaser-canvas:focus, #enable3d-three-canvas:focus { outline: none=
+; }
+
+#enable3d-three-canvas { position: absolute; }
+------MultipartBoundary--RPWGmS2dCUpBPuHdxg6BC1tlYDddIA5LOg6wIi4AuN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-1df00c99-699b-4b49-9285-d9dae9496fda@mhtml.blink
+
+@charset "utf-8";
+
+html, body { background: none !important; }
+------MultipartBoundary--RPWGmS2dCUpBPuHdxg6BC1tlYDddIA5LOg6wIi4AuN------
