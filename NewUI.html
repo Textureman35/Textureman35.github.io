@@ -4,6 +4,15 @@
     <title>Steam Store Clone</title>
     <style>
         /* Add your CSS here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            background-size: 400% 400%;
+            animation: Gradient 15s ease infinite;
+            background-image: linear-gradient(45deg, #000428, #004e92, #000428);
+        }
         .game {
             position: relative;
             width: 200px;
@@ -24,36 +33,56 @@
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
         }
+        .games-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .category-header {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        @keyframes Gradient {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <section id="featured-games">
-            <div class="game">
-                <img src="game1.jpg" alt="Game 1">
-                <div class="title">Game 1</div>
+            <h2 class="category-header">Featured Games</h2>
+            <div class="games-row">
+                <!-- 10 placeholder games for the Featured Games category -->
+                <a href="https://www.google.com" class="game">
+                    <img src="game1.jpg" alt="Game 1">
+                    <div class="title">Game 1</div>
+                </a>
+                <!-- Repeat the above block 9 more times, changing the game number each time -->
             </div>
-            <div class="game">
-                <img src="game2.jpg" alt="Game 2">
-                <div class="title">Game 2</div>
-            </div>
-            <!-- More featured games go here -->
         </section>
         <section id="popular-games">
-            <!-- Popular games go here -->
+            <h2 class="category-header">Popular Games</h2>
+            <div class="games-row">
+                <!-- 10 placeholder games for the Popular Games category -->
+                <a href="https://www.google.com" class="game">
+                    <img src="game1.jpg" alt="Game 1">
+                    <div class="title">Game 1</div>
+                </a>
+                <!-- Repeat the above block 9 more times, changing the game number each time -->
+            </div>
         </section>
         <section id="new-releases">
-            <!-- New releases go here -->
+            <h2 class="category-header">New Releases</h2>
+            <div class="games-row">
+                <!-- 10 placeholder games for the New Releases category -->
+                <a href="https://www.google.com" class="game">
+                    <img src="game1.jpg" alt="Game 1">
+                    <div class="title">Game 1</div>
+                </a>
+                <!-- Repeat the above block 9 more times, changing the game number each time -->
+            </div>
         </section>
     </main>
     <footer>
