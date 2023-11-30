@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <link href="https://cdn.jsdelivr.net/gh/nate-games/waflash@main/style.css"
-        rel="stylesheet" type="text/css">
-</head>
-
 <body>
-    <script>
-        var gameConfig = {
-            swfUrl: "https://github.com/Textureman35/Textureman35.github.io/raw/main/swfs/fleeing_the_complex.swf"
-        }
-    </script>
-    <div id="waflashContainer">
-        <canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
-        <div id="waflashStatus" style="display: none;">Playing...</div>
-<script src="https://unpkg.com/@ruffle-rs/ruffle"  rossorigin="anonymous" type="module"></script>
-    </div>
+    <object>
+        <embed src="path/to/movie.swf" width="550" height="400" />
+    </object>
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
 
 </html>
