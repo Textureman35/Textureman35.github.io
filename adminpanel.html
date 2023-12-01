@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steam Store Clone - Admin Panel</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            background-size: 400% 400%;
+            animation: Gradient 15s ease infinite;
+            background-image: linear-gradient(45deg, #000428, #004e92, #000428);
+        }
+        .admin-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #1c8adb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @keyframes Gradient {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-form">
+        <h2>Add a New Game</h2>
+        <form id="gameForm">
+            <label for="gameName">Game Name:</label>
+            <input type="text" id="gameName" name="gameName" required>
+
+            <label for="gameImage">Game Image URL:</label>
+            <input type="text" id="gameImage" name="gameImage" required>
+
+            <label for="gameLink">Game Link:</label>
+            <input type="text" id="gameLink" name="gameLink" required>
+
+            <button type="button" onclick="addGame()">Add Game</button>
+        </form>
+    </div>
+
+    <script>
+        function addGame() {
+            var gameName = document.getElementById("gameName").value;
+            var gameImage = document.getElementById("gameImage").value;
+            var gameLink = document.getElementById("gameLink").value;
+
+            var gamesRow = document.querySelector(".games-row");
+
+            var gameElement = document.createElement("a");
+            gameElement.href = gameLink;
+            gameElement.classList.add("game");
+
+            var imgElement = document.createElement("img");
+            imgElement.src = gameImage;
+            imgElement.alt = gameName;
+
+            var titleElement = document.createElement("div");
+            titleElement.classList.add("title");
+            titleElement.textContent = gameName;
+
+            gameElement.appendChild(imgElement);
+            gameElement.appendChild(titleElement);
+
+            gamesRow.appendChild(gameElement);
+        }
+    </script>
+</body>
+</html>
