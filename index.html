@@ -32,6 +32,19 @@
             min-height: 100vh;
         }
 
+        body:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(to right, #263a5a, #263a5a, #284134, #203342, #263a5a, #263a5a);
+        background-size: 600% 100%;
+        animation: gradientAnimation 10s infinite linear; /* Adjust animation duration as needed */
+    }
+
         #container {
             background-color: #2d2d2d; /* Container background color */
             padding: 20px;
@@ -43,8 +56,25 @@
             animation: fadeIn 1s ease;
         }
 
+        #video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1; /* Increase the z-index to bring it to the front */
+}
+
+
+        #video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .mac-window {
-            background-color: #f6f6f6; /* MacOS window background color */
+            background-color: #2d2d2d; /* MacOS window background color */
             border: 1px solid #d1d1d1; /* Window border color */
             border-radius: 8px;
             padding: 20px;
@@ -105,7 +135,7 @@
         }
 
         .popup-content {
-            background: #fff;
+            background: #2d2d2d;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -117,9 +147,20 @@
             top: 10px;
             right: 10px;
             cursor: pointer;
-        }
-
+}
         /* Animations */
+        
+
+
+        @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 0;
+        }
+        100% {
+            background-position: 100% 0;
+        }
+    }
+        
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -149,10 +190,22 @@
                 opacity: 1;
                 transform: translateX(0);
             }
+
+        
+
         }
     </style>
 </head>
 <body>
+   
+    <!-- Video -->
+    <div id="video-container">
+        <video id="video" autoplay muted onended="showMainMenu()" onloadedmetadata="startOpacityTimer()">
+            <source src="ihub.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
     <div id="container" class="mac-window">
         <h1>iPad Hub</h1>
         <p>Explore a variety of exciting content for your iPad.</p>
@@ -199,15 +252,48 @@
 
         <!-- Upgrade betch -->
 
-    <script>
-        function openPopup(popupId) {
-            document.getElementById(popupId).style.display = 'flex';
-        }
-
-        function closePopup(popupId) {
-            document.getElementById(popupId).style.display = 'none';
-        }
-    </script>
+        <script>
+            
+            
+            function openPopup(popupId) {
+                var popup = document.getElementById(popupId);
+                popup.style.display = 'flex';
+                popup.style.zIndex = 3; // Move the popup to the top layer
+            }
+        
+            function closePopup(popupId) {
+                document.getElementById(popupId).style.display = 'none';
+            }
+        
+            function startOpacityTimer() {
+                setTimeout(function () {
+                    decreaseOpacity();
+                }, 10000); // 10 seconds delay before starting opacity decrease
+            }
+        
+            function decreaseOpacity() {
+                var video = document.getElementById('video');
+                var container = document.getElementById('container');
+                var gamesPopup = document.getElementById('gamesPopup');
+                var toolsPopup = document.getElementById('toolsPopup');
+                var initialOpacity = 1;
+                var opacityDecrement = 0.01;
+                var intervalTime = 1; // milliseconds
+                var interval = setInterval(function () {
+                    if (initialOpacity > 0) {
+                        initialOpacity -= opacityDecrement;
+                        video.style.opacity = initialOpacity;
+                    } else {
+                        container.style.zIndex = 2; // Move the container to the top layer
+                        gamesPopup.style.zIndex = 3; // Move the games popup to the top layer
+                        toolsPopup.style.zIndex = 3; // Move the tools popup to the top layer
+                        clearInterval(interval);
+                    }
+                }, intervalTime);
+            }
+        </script>
+        
+        
 </body>
 </html>
 
