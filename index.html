@@ -263,6 +263,19 @@
         "Made with love and HTML!",
         "What the hell even IS Joe Biden?",
     ];
+
+    // Function to display a random phrase
+    function displayRandomPhrase() {
+        // Get the <p> element by its id
+        var randomPhraseElement = document.getElementById("randomPhrase");
+        // Get a random index from the phrases array
+        var randomIndex = Math.floor(Math.random() * phrases.length);
+        // Set the inner text of the <p> element to the randomly selected phrase
+        randomPhraseElement.innerText = phrases[randomIndex];
+    }
+
+    // Call the function to display a random phrase when the website is loaded
+    displayRandomPhrase();
             
             function openPopup(popupId) {
                 var popup = document.getElementById(popupId);
