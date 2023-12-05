@@ -20,12 +20,18 @@
             color: white;
             z-index: 1;
         }
-        .rounded-box {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-        }
+		.rounded-box {
+    		background-color: rgba(0, 0, 0, 0.7);
+    		padding: 20px;
+    		border-radius: 20px;
+    		margin-bottom: 20px;
+    		text-align: center;
+		}
+
+		.rounded-box ul {
+    		padding: 0; /* Add this line to remove default padding */
+    		text-align: center; /* Add this line to align text to the left */
+}
         .btn-sign-up {
             display: inline-block;
             padding: 15px 30px;
@@ -35,6 +41,7 @@
             background-color: #3498db;
             border-radius: 5px;
             position: relative;
+            margin-top: 20px;
             overflow: hidden;
         }
         .shine {
@@ -50,6 +57,29 @@
         .btn-sign-up:hover .shine {
             transform: translateX(100%);
         }
+        
+        li {
+    list-style-type: none;
+		}
+        
+        
+  @keyframes colorCycle {
+    0% {
+        color: #3498db; /* Initial color */
+    }
+    50% {
+        color: #3366cc; /* Midway color */
+    }
+    100% {
+        color: #3498db; /* Final color */
+    }
+}
+
+/* Apply the animation to the h1 element */
+h1 {
+    animation: colorCycle 5s infinite; /* Adjust the duration as needed */
+}
+
     </style>
 </head>
 <body>
@@ -64,8 +94,9 @@
                 <li>More games!</li>
                 <li>Suggest features!</li>
                 <li>Try new features early!</li>
+                <li>Game cheats and hacks!</li>
                 <a href="#" class="btn-sign-up">
-                    Sign Up Now
+                    Sign Up Now!
                     <div class="shine"></div>
                 </a>
             </ul>
