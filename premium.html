@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iHub Premium</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        video {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .rounded-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .btn-sign-up {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .shine {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent 50%, rgba(255, 255, 255, 0.3));
+            transform: translateX(-100%);
+            transition: transform 0.5s;
+        }
+        .btn-sign-up:hover .shine {
+            transform: translateX(100%);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="vapor.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <div class="rounded-box">
+            <h1>iHub Premium</h1>
+            <ul>
+                <li>Get access to a hyper-fast proxy!</li>
+                <li>More games!</li>
+                <li>Suggest features!</li>
+                <li>Try new features early!</li>
+            </ul>
+        </div>
+        <a href="#" class="btn-sign-up">
+            Sign Up Now
+            <div class="shine"></div>
+        </a>
+    </div>
+</body>
+</html>
