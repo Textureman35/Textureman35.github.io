@@ -192,10 +192,20 @@
                 opacity: 1;
                 transform: translateX(0);
             }
-
-        
-
         }
+
+        @keyframes colorCycle {
+    0% {
+        color: #4fa3d1; /* Start with dark blue */
+    }
+    50% {
+        color: #61dafb; /* Transition to light blue halfway through */
+    }
+    100% {
+        color: #4fa3d1; /* Return to dark blue at the end */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -208,13 +218,13 @@
         </video>
     </div>
 
-    <div id="container" class="mac-window">
-        <h1>iPad Hub</h1>
-        <p id="randomPhrase">Hold up, I'm tryna think of something funny...</p>
-        <a href="#" onclick="openPopup('gamesPopup')">Games</a>
-        <a href="#" onclick="openPopup('toolsPopup')">Tools</a>
-        <a href="#" onclick="openPopup('premiumPopup')">Tools</a>
-    </div>
+<div id="container" class="mac-window">
+    <h1>iPad Hub</h1>
+    <p id="randomPhrase">Hold up, I'm tryna think of something funny...</p>
+    <a href="#" onclick="openPopup('gamesPopup')">Games</a>
+    <a href="#" onclick="openPopup('toolsPopup')">Tools</a>
+    <a href="premium.html" target="_blank" style="animation: colorCycle 5s infinite;">Premium</a>
+</div>
 
     <!-- Games Popup -->
     <div id="gamesPopup" class="popup">
