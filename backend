@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iHub 2 Backend</title>
+    <style>
+        /* Add any additional styling here */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #0074D9;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to iHub 2 Backend</h1>
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 1</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 2</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 3</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 4</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 5</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 6</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 7</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 8</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 9</button>
+        <button class="button" onclick="window.location.href='/ihub2games/example.html'">Button 10</button>
+    </div>
+</body>
+</html>
